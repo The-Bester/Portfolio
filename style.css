@@ -1,0 +1,108 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: whitesmoke;
+  flex-direction: column;
+  min-height: 95vh;
+  min-width: 500px;
+  height: 100%;
+  color: black;
+}
+
+.main {
+  flex: 1;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+}
+
+.name {
+  background: linear-gradient(to right, purple, rgb(203, 94, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+}
+
+.tile-image {
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  margin-right: 50px;
+  border-radius: 5%;
+  object-fit: cover
+}
+
+.tile-image:hover {
+  box-shadow: 5px 5px rgba(203, 94, 0, 10);
+}
+
+.space {
+  flex: 0.1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  flex: 1;
+  text-align: justify;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  clear: both;
+}
+
+@media (max-width: 733px) {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .flex-container {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .tile-image {
+    margin: 0;
+    display: inline;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    float: none;
+  }
+
+  .space {
+    margin: 20%;
+  }
+
+  .card {
+    display: inline-block;
+  }
+}
