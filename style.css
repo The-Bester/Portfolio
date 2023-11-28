@@ -34,7 +34,7 @@ p {
   color: black;
 }
 
-.name {
+.gradient {
   background: linear-gradient(to right, purple, rgb(203, 94, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -61,6 +61,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.centered{
+  text-align: center;
 }
 
 .card {
