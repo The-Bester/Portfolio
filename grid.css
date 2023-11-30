@@ -1,6 +1,7 @@
 .grid-container{
     display: grid;
     margin:0;
+    margin-left: 1%;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 5%;
