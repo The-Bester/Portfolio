@@ -4,8 +4,8 @@
 body {
   font-family: "Poppins", sans-serif;
   margin:0;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
   background-color: whitesmoke;
   flex-direction: column;
   min-height: 95vh;
@@ -90,40 +90,44 @@ footer {
     margin: 5px;
   }
 
-  h2 {
-    margin: 5px;
+  body{
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
-  .grid-container{
-    gap:0;
-    grid-template-columns: auto;
+  h2 {
+    margin: 1%;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr; /* Adjust the column layout as needed */
     grid-template-rows: auto;
   }
   
-  .flex-container-row, .flex-container-column{
-    display: inline-block;
+  .flex-container-row,
+  .flex-container-column,
+  .flex-card,
+  .flex-space {
+    display: grid; /* Use grid instead of inline-block */
     margin: 0;
+  }
+
+  .flex-card{
+    margin-bottom: 10%;
   }
 
   .portfolio-image {
     margin: 0;
-    display: inline;
+    display: block; /* Use block instead of inline */
     width: 100%;
     max-width: 100%;
     object-fit: cover;
-    float: none;
   }
 
-  div{
-    display:inline-block;
-
-  }
-
-  .space {
-    margin: 5%;
-  }
-
-  .flex-card, .flex-space {
-    display: inline-block;
+  div {
+    display: grid; /* Use grid instead of inline-block */
   }
 }
